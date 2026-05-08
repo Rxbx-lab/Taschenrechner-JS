@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="resultArea">
+        
+    </div>
+    
+    <table>
+        <tr>
+            <td onclick="ac()">AC</td>
+            <td onclick="appendOperation('&#40')">(</td>
+            <td onclick="appendOperation('&#41')">)</td>
+            <td onclick="löschen()" id="del">DEL</td>
+        </tr>       
+        
+        <tr>
+            <td onclick="appendOperation(7)">7</td>
+            <td onclick="appendOperation(8)">8</td>
+            <td onclick="appendOperation(9)">9</td>
+            <td onclick="appendOperation(' / ')" class="highlight">/</td>
+            
+        <tr>
+            <td onclick="appendOperation(4)">4</td>
+            <td onclick="appendOperation(5)">5</td>
+            <td onclick="appendOperation(6)">6</td>
+            <td onclick="appendOperation(' * ')" class="highlight">x</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(1)">1</td>
+            <td onclick="appendOperation(2)">2</td>
+            <td onclick="appendOperation(3)">3</td>
+            <td onclick="appendOperation(' + ')" class="highlight">+</td>
+        </tr>
+        <tr>
+            <td onclick="appendOperation(0)">0</td>
+            <td onclick="appendOperation('.')">,</td>
+            <td onclick="rechnen()" id="gleich">=</td>
+            <td onclick="appendOperation(' - ')" class="highlight">-</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
